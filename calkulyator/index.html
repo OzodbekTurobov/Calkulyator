@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calkulyator web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="output">
+            &nbsp; &nbsp;&nbsp;
+            <input type="text" class="result" id="res" placeholder="0" ></input>
+        </div>
+     <div class="input">
+        <button class="buttonn" onclick="Clear()"><h3>C</h3></button>
+        <button class="buttonn"  onclick="display('%')"><h3>%</h3></button>
+        <button class="buttonn" onclick="del()"><h3><--</h3></button>
+        <button class="buttonn" onclick="display('/')"><h3>/</h3></button>
+        <button class="buttonn" onclick="display('7')"><h3>7</h3></button>
+        <button class="buttonn" onclick="display('8')"><h3>8</h3></button>
+        <button class="buttonn" onclick="display('9')"><h3>9</h3></button> 
+        <button class="buttonn" onclick="display('*')"><h3>*</h3></button>
+        <button class="buttonn" onclick="display('6')"><h3>6</h3></button>
+        <button class="buttonn" onclick="display('5')"><h3>5</h3></button>
+        <button class="buttonn" onclick="display('4')"><h3>4</h3></button>
+        <button class="buttonn" onclick="display('+')"><h3>+</h3></button>
+        <button class="buttonn" onclick="display('1')"><h3>1</h3></button>
+        <button class="buttonn" onclick="display('2')"><h3>2</h3></button>
+        <button class="buttonn" onclick="display('3')"><h3>3</h3></button>
+        <button class="buttonn" onclick="display('-')"><h3>-</h3></button>
+        <button class="buttonn" onclick="display('0')"><h3>0</h3></button>
+        <button class="buttonn" onclick="display('00')"><h3>00</h3></button>
+        <button class="buttonn" onclick="display('.')"><h3>.</h3></button>
+        <button class="buttonn" onclick="claculate()"><h3>=</h3></button> 
+     </div>
+    </div>
+      <script>
+     let inputnum=document.getElementById('res');
+        function display(e)
+        {inputnum.value+=e;}
+
+        function claculate()
+        {try{
+            inputnum.value=eval(inputnum.value);
+            }
+         catch(e){
+               alert("invalid command");
+             }
+         }
+        
+        function Clear()
+        {inputnum.value="";}
+
+        function del()
+        {inputnum.value=inputnum.value.slice(0,-1);}
+      </script>
+</body>
+</html>

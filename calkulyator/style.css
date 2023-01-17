@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(232, 231, 231);
+}
+.container{
+margin-left: 40%;
+margin-top: 60px;
+width:340px;
+display: grid;
+grid-gap: 5PX;
+border:none;
+border-radius: 9px;
+background-color: rgb(245, 65, 65);
+box-shadow:5px 5px  10px rgb(160, 143, 143),
+                    -5px -5px 10px rgb(159, 147, 147);
+}
+.output{
+background-color:rgb(228, 65, 65);
+border: 0px solid rgb(249, 0, 0);
+border-radius: 6px;
+column-span: 4;
+height: 120px;
+box-shadow:  5px 5px 10px rgb(155, 136, 136);
+
+}
+.input{
+display: grid;
+border-radius: 9px;
+border: none;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+margin: 3px;  
+grid-gap: 8px;
+padding: 16px;
+box-shadow: 5px 5px 10px rgb(86, 76, 76);
+
+                 
+
+
+}
+.result{
+margin-top: 2px;
+margin-left: 9px;
+height: 76%;
+width: 95%;
+border:none;
+border-radius: 8px;
+background-color: aliceblue;
+text-align: end;
+box-shadow:inset 5px 5px 10px rgb(65, 65, 66);
+text-align: end;
+font-size: 45px;
+color: rgb(12, 12, 67);
+}
+
+.buttonn:hover{
+ background-color:aqua;
+}
+.buttonn{
+text-align: center;
+font-size: 18px;
+    color: black;
+    border: 0px solid rgb(255, 0, 140);
+    border-radius: 10000px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
